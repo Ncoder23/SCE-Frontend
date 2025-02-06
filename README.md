@@ -7,6 +7,16 @@ Sustainability Credit Exchange (SCE) is a **full-stack platform** designed to en
 
 # 📌 Frontend Repository (React & Material-UI)
 
+## To Do List
+- [x] Landing Page
+- [x] User Authentication
+- [x] Product Page
+- [x] Cart Page
+- [ ] Checkout system
+- [ ] Payment system
+- [ ] Profile Page
+- [ ] Credit History Page
+- [ ] Seller Panel for managing credits
 ## 🛠️ Tech Stack
 - React.js & Material-UI (MUI)
 - Recharts.js (for data visualization)
