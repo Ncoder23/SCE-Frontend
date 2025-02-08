@@ -67,7 +67,7 @@ const LandingPage: React.FC = () => {
                 WebkitTextFillColor: 'transparent',
               }}
             >
-              Sustainability Credit Exchange
+              CarbonXchange
             </Typography>
           </motion.div>
 
