@@ -40,8 +40,8 @@ const Login: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your login logic here
-    const url = 'http://localhost:8000/api/users/login/';
+    const url = `${import.meta.env.VITE_API_URL}/api/users/login/`;
+    console.log(url);
     const response = await fetch(url, {
       method: 'POST',
       headers: {

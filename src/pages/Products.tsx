@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const url = 'http://localhost:8000/api/credits/sustainability-credits/';
+      const url = `${import.meta.env.VITE_API_URL}/api/credits/sustainability-credits/`;
       const token = localStorage.getItem('token');
       if (!token) {
         throw new Error('User not authenticated');
