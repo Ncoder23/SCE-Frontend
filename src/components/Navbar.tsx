@@ -89,7 +89,7 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Desktop Logo */}
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             sx={{
@@ -103,7 +103,10 @@ const Navbar = () => {
             onClick={() => navigate('/')}
           >
             LOGO
-          </Typography>
+          </Typography> */}
+          <Box sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, flexGrow: -1 }} onClick={() => navigate('/')}>
+            <img src="/sce-poster-no-text.png" alt="SCE" style={{ width: '40px', height: '40px' }} />
+          </Box>
 
           {/* Mobile Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -147,7 +150,7 @@ const Navbar = () => {
           </Box>
 
           {/* Mobile Logo */}
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             sx={{
@@ -162,7 +165,11 @@ const Navbar = () => {
             onClick={() => navigate('/')}
           >
             LOGO
-          </Typography>
+          </Typography> */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1 }}>
+            <img src="/sce-poster-no-text.png" alt="SCE" style={{ width: '40px', height: '40px' }} />
+          </Box>
+          
 
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>

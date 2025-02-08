@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             </Grid>
             <Box sx={{ mt: 5, textAlign: 'center' }}>
               <Typography variant="body2" color="text.secondary">
-                © {new Date().getFullYear()} Sustainability Credit Exchange. All rights reserved.
+                © {new Date().getFullYear()} CarbonXchange. All rights reserved.
               </Typography>
             </Box>
           </Container>
