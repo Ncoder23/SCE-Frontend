@@ -10,11 +10,11 @@ import {
   Container,
   Button,
   MenuItem,
-  Avatar,
+  
   ListItemIcon,
   ListItemText,
 } from '@mui/material'
-import { Menu as MenuIcon, AccountCircle, Person, Logout, ShoppingCart } from '@mui/icons-material'
+import { Menu as MenuIcon, AccountCircle, Person, Logout } from '@mui/icons-material'
 import CartButton from './CartButton'
 
 interface Page {

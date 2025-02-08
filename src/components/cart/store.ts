@@ -16,6 +16,7 @@ const loadCartState = (): CartState => {
     }
     return JSON.parse(serializedCart);
   } catch (err) {
+    console.error('Error loading cart state:', err);
     return {
       items: [],
       loading: false,
