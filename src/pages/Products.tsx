@@ -81,7 +81,9 @@ const Projects: React.FC = () => {
   const handleUnitsChange = (productId: number, value: string) => {
     if (value === '' || /^\d+$/.test(value)) {
       const numValue = parseInt(value);
-      if (value === '' || (numValue > 0 && numValue <= products.find(p => p.id === productId)?.available_quantity!)) {
+      const product = products.find(p => p.id === productId);
+      
+      if (value === '' || (numValue > 0 && product && numValue <= product.available_quantity)) {
         setPurchaseStates(prev => ({
           ...prev,
           [productId]: { ...prev[productId], units: value }

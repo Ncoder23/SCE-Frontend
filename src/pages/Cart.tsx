@@ -12,7 +12,7 @@ import {
 import DeleteIcon from '@mui/icons-material/Delete';
 import { CartItem } from '../components/cart/cart.types';
 const Cart: React.FC = () => {
-  const { cart, removeItemFromCart, updateItemQuantity, emptyCart, getCartTotal } = useCart();
+  const { cart, removeItemFromCart, emptyCart, getCartTotal } = useCart();
 
   return (
     <Box>
