@@ -4,6 +4,7 @@
 Sustainability Credit Exchange (SCE) is a **full-stack platform** designed to enable businesses and individuals to **buy, sell, and track** environmental credits, including **Carbon Credits, Renewable Energy Credits (RECs), and Plastic Credits**. The platform promotes sustainability by integrating financial incentives into eco-friendly actions.
 
 ---
+### 🔗 Visit [SCE](https://sceapp.netlify.app/)
 
 # 📌 Frontend Repository (React & Material-UI)
 
