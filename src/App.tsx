@@ -10,7 +10,7 @@ import Products from "./pages/Products";
 import { Provider } from 'react-redux';
 import { store } from './components/cart/store';
 import Cart from "./pages/Cart";
-
+import Valentine from "./pages/avanil";
 const theme = createTheme({
   palette: {
     primary: { main: "#388e3c" }, // Custom green color
@@ -44,6 +44,7 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/products" element={<Products />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/valentine" element={<Valentine />} />
             </Routes>
           </Layout>
         </Router>

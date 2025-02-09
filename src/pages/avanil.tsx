@@ -21,6 +21,11 @@ const Valentine: React.FC = () => {
         setAccepted(true);
     };
 
+    const handlePlayAgain = () => {
+        setAccepted(false);
+        setScaleFactor(1);
+    };
+
     const createDoraemons = (count: number) => {
         for (let i = 0; i < count; i++) {
             const doraemon = document.createElement('div');
@@ -66,13 +71,8 @@ const Valentine: React.FC = () => {
             <h1>
                 {accepted ? "Yay! I'm So Happy!" : "Be My Valentine?"}
             </h1>
-            {/* <p>
-                {accepted
-                    ? (isChinese ? "感谢你成为我的情人！" : "Thank you for being my Valentine!")
-                    : "Will you be my Valentine?"}
-            </p> */}
 
-            {!accepted && (
+            {!accepted ? (
                 <div className="buttons">
                     <button
                         id="yesBtn"
@@ -81,24 +81,20 @@ const Valentine: React.FC = () => {
                     >
                         Yes
                         <div id="sadPanda" className="popout-icon">
-                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="32" cy="32" r="30" fill="#fff" stroke="#000" strokeWidth="2" />
-                                <circle cx="15" cy="15" r="8" fill="#000" />
-                                <circle cx="49" cy="15" r="8" fill="#000" />
-                                <circle cx="22" cy="28" r="6" fill="#000" />
-                                <circle cx="42" cy="28" r="6" fill="#000" />
-                                <circle cx="22" cy="28" r="2" fill="#fff" />
-                                <circle cx="42" cy="28" r="2" fill="#fff" />
-                                <path d="M22,42 Q32,32 42,42" stroke="#000" strokeWidth="2" fill="none" />
-                                <circle cx="18" cy="36" r="1.5" fill="#00f" />
-                                <circle cx="46" cy="36" r="1.5" fill="#00f" />
-                            </svg>
+                            <img src="/crying-doraemon.png" alt="Crying Doraemon" width="64" height="64" />
                         </div>
                     </button>
                     <button id="noBtn" onClick={handleNoClick}>
                         No
                     </button>
                 </div>
+            ) : (
+                <button 
+                    className="play-again-btn"
+                    onClick={handlePlayAgain}
+                >
+                    Play Again
+                </button>
             )}
         </div>
     );
