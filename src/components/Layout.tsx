@@ -1,5 +1,8 @@
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { useLocation } from 'react-router-dom';
+import React from 'react';
+import Navbar from './Navbar';
 
 const RootBox = styled(Box)({
   display: 'flex',
@@ -17,9 +20,22 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const location = useLocation();
+  const isValentinePage = location.pathname === '/valentine';
+
+  // Split children into array to separate Navbar from other components
+  const childrenArray = React.Children.toArray(children);
+  const navbar = childrenArray.find(child => 
+    React.isValidElement(child) && child.type === Navbar
+  );
+  const otherComponents = childrenArray.filter(child => 
+    React.isValidElement(child) && child.type !== Navbar
+  );
+
   return (
     <RootBox>
-      {children}
+      {!isValentinePage && navbar}
+      {otherComponents}
     </RootBox>
   );
 };

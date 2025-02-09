@@ -81,7 +81,18 @@ const Valentine: React.FC = () => {
                     >
                         Yes
                         <div id="sadPanda" className="popout-icon">
-                            <img src="/crying-doraemon.png" alt="Crying Doraemon" width="64" height="64" />
+                        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" fill="#fff" stroke="#000" strokeWidth="2" />
+                <circle cx="15" cy="15" r="8" fill="#000" />
+                <circle cx="49" cy="15" r="8" fill="#000" />
+                <circle cx="22" cy="28" r="6" fill="#000" />
+                <circle cx="42" cy="28" r="6" fill="#000" />
+                <circle cx="22" cy="28" r="2" fill="#fff" />
+                <circle cx="42" cy="28" r="2" fill="#fff" />
+                <path d="M22,42 Q32,32 42,42" stroke="#000" strokeWidth="2" fill="none" />
+                <circle cx="18" cy="36" r="1.5" fill="#00f" />
+                <circle cx="46" cy="36" r="1.5" fill="#00f" />
+              </svg>
                         </div>
                     </button>
                     <button id="noBtn" onClick={handleNoClick}>
@@ -93,7 +104,7 @@ const Valentine: React.FC = () => {
                     className="play-again-btn"
                     onClick={handlePlayAgain}
                 >
-                    Play Again
+                    Once More
                 </button>
             )}
         </div>
