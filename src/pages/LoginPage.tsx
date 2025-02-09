@@ -55,7 +55,7 @@ const Login: React.FC = () => {
     }
     const data = await response.json();
     localStorage.setItem('token', data.token);
-    navigate('/');
+    navigate('/cart');
   };
 
   return (
