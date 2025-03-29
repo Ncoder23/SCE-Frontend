@@ -43,7 +43,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/products" element={<Products />} />
-              <Route path="/cart" element={<Valentine />} />
+              <Route path="/cart" element={<Cart />} />
               <Route path="/valentine" element={<Valentine />} />
             </Routes>
           </Layout>
