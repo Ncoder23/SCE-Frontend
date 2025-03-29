@@ -39,7 +39,7 @@ function App() {
           <Layout>
             <Navbar />
             <Routes>
-              <Route path="/" element={<Valentine />} />
+              <Route path="/" element={<LandingPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/products" element={<Products />} />
